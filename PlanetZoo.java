@@ -18,8 +18,6 @@ public class PlanetZoo {
 
         Staff caretaker1 = new Staff("John", "Caretaker", null);
         caretaker1.assignStaff(desert);
-
-        System.out.println("Staff: " + caretaker.getDetails());
     }
 }
 
@@ -88,9 +86,5 @@ class Staff {
 
     public void assignStaff(Habitat habitat) {
         this.habitat = habitat;
-    }
-
-    public String getDetails() {
-        return "Name: " + name + ", Role: " + role + ", Habitat: " + (habitat != null ? habitat.toString() : "None");
     }
 }
